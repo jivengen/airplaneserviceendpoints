@@ -49,7 +49,7 @@ router.get('/', function(req, res, next) {
           output += "Weight: " + climbdata.weight + "<br>";
       })
       
-     
+
       res.render('airplane',  {title: 'Airplane Project', outputs :output})
       
         })
