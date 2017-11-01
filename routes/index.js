@@ -28,22 +28,29 @@ var climbdata = mongoose.model('climbdata', climbDataSchema, 'climbdata');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  //res.render('index', { title: 'Express' });
   
-  console.log("I am here");
+  
   
       climbdata.find({}, function (err,climbdatas){
       if (err){
           return console.error(err);
       }
       
+      
       var output = "";
       
-      for(var climbdata in climbdatas){
-          output += climbdata;
-      }
+    /*  for(var i = 0; i < climbdatas.length; i++){
+          console.log(climbdatas[i]);
+          output += climbdatas[i].weight + "<br>";
+      }*/
       
-      res.send(climbdata);
+      climbdatas.forEach(function(climbdata){
+           console.log(climbdata.weight);
+          output += "Weight: " + climbdata.weight + "<br>";
+      })
+      
+     
+      res.render('airplane',  {title: 'Airplane Project', outputs :output})
       
         })
 
