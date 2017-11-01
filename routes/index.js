@@ -56,4 +56,10 @@ router.get('/', function(req, res, next) {
 
 });
 
+router.get('/ask', function(req, res, next) {
+  res.render('ask')
+  
+});
+
+
 module.exports = router;

@@ -1,7 +1,7 @@
 doctype
 html( lang="en" )
     head
-        title Baking Bootstrap Snippets with Jade
+        title Airplane Specs
         meta( charset='utf-8' )
         meta( http-equiv='X-UA-Compatible', content='IE=edge' )
         meta( name='viewport', content='width=device-width, initial-scale=1.0' )
@@ -15,12 +15,17 @@ html( lang="en" )
         script( src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' )
         script( src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js' )
         
-h1= title
+
+h1 Airplane Specifications
+
+    p
+<select name=weight>
+    <option>18000</option>
+    <option>20000</option>
+    <option>22000</option>
+</select>
+    p
+<button class="btn btn-primary" disabled="disabled" type="submit">Submit</button>
 
 
-    p Wecome to #{title}
-    p This is your airplane weights to choose from.
-    
-    !=outputs
-
-    p these are the outputs...
+  
