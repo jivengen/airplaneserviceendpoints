@@ -15,7 +15,6 @@ module.exports.findPlane = function(req, res, next) {
       })
         }
       
-      console.log("inside controller");
       
 
       
