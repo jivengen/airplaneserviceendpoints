@@ -5,7 +5,7 @@ var climbDataSchema = new mongoose.Schema({
     vfriFlap5: Number,
     vfriFlap10: Number,
     vfriFlap15 : Number,
-    vClmb : Number,
+    vClmb : Number
 });
 
-var climbData = mongoose.model('climbdata', climbDataSchema);
+var climbData = mongoose.model('climbdata', climbDataSchema, 'climbdata');

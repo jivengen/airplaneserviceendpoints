@@ -4,6 +4,6 @@ var connectionstring = "mongodb://cidm4382:cidm4382@ds157624.mlab.com:57624/4382
 mongoose.connect(connectionstring, { useMongoClient: true });
 
 mongoose.Promise = global.Promise;
-
+console.log("promise and connect");
 //Bring in your schemas & models
 require('./airplane')

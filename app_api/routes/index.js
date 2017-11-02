@@ -5,7 +5,7 @@ var ctrlAirplane = require('../controllers/airplaneController');
 
 
 /* GET home page. */
-router.get('/', ctrlAirplane.findplane);
+router.get('/', ctrlAirplane.findPlane);
       
 
       
